@@ -15,7 +15,7 @@ public class BlogRepository
     public void AddPost(Post post)
     {
         _context.Posts.Add(post);
-        _context.SaveChanges();
+        // _context.SaveChanges();
     }
 
     public IEnumerable<Post> GetAllPosts()
@@ -26,7 +26,7 @@ public class BlogRepository
     public void AddComment(Comment comment)
     {
         _context.Comments.Add(comment);
-        _context.SaveChanges();
+        // _context.SaveChanges();
     }
 
     public IEnumerable<Comment> GetCommentsByPostId(int postId)
@@ -37,6 +37,6 @@ public class BlogRepository
     public void DeletePost(Post post)
     {
         _context.Posts.Remove(post);
-        _context.SaveChanges();
+        // _context.SaveChanges();
     }
 }
